@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int choice = -1;
-        while(choice != 0){
+        int choice;
+        while(true){
             System.out.println("Menu");
             System.out.println("1. Draw the triangle");
             System.out.println("2. Draw the square");
