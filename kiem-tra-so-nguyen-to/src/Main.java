@@ -14,7 +14,7 @@ public class Main {
                 if (prime % i == 0) {
                     count = count + 1;
                 }
-            } 
+            }
             if (count == 2){
                 System.out.printf("%d là số nguyên tố", prime);
             } else {
