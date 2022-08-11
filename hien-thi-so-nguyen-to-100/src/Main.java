@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        
+
         System.out.println("Các số nguyên tố bé hơn 100");
         int count = 0;
         for (int num = 2; num < 100; num++ ){
