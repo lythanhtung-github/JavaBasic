@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         String[] students = {"tung", "hieu", "huong", "loc", "binh", "tai", "quy", "khanh"};
-        
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập tên sinh viên bạn muốn tìm: ");
         String name = sc.nextLine();
