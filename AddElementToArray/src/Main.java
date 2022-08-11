@@ -23,15 +23,16 @@ public class Main {
         if (numbers[index] == 0) {
             numbers[index] = number;
         } else {
-            for (int i = (index + 1); i < numbers.length; i++) {
+            for (int i = index; i < numbers.length; i++) {
                 numbersAfterIndex[count] = numbers[i];
                 count++;
             }
-
-            for (int i = (index + 1), j = 0; i < numbers.length; i++, ++j) {
+            numbers[index] = number;
+            for (int i = (index + 1), j = 0; i < numbers.length; i++, j++) {
                 numbers[i] = numbersAfterIndex[j];
             }
         }
+
         System.out.printf("Mảng sau khi thêm %d: ", number);
         for (int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i] + " ");
