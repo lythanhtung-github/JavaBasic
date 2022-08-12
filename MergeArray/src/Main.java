@@ -10,6 +10,7 @@ public class Main {
             System.out.println("Nhập số phần tử cho mảng thứ nhất: ");
             amountNumbers1 = sc.nextInt();
         } while (amountNumbers1 < 0 || amountNumbers1 > 4);
+
         int[] numbers1 = new int[amountNumbers1];
         for (int i = 0; i < amountNumbers1; i++) {
             System.out.printf("Nhập giá trị cho phần tử thứ %d trong mảng 1: \n", i + 1);
