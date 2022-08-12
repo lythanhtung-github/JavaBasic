@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         int row, col;
 
         do {
@@ -22,19 +21,20 @@ public class Main {
             }
         }
         int indexI = 0, indexJ = 0;
-        int max = numbers[0][0];
+        int min = numbers[0][0];
         System.out.println("Mảng 2 chiều: ");
         for (int i = 0; i < numbers.length; i++) {
             for (int j = 0; j < numbers[i].length; j++) {
                 System.out.printf("%-4d", numbers[i][j]);
-                if (numbers[i][j] > max) {
-                    max = numbers[i][j];
+                if (numbers[i][j] < min) {
+                    min = numbers[i][j];
                     indexI = i;
                     indexJ = j;
                 }
             }
             System.out.println();
         }
-        System.out.printf("Gíá trị lớn nhất của mảng là %d ở tọa độ %d-%d:", max, indexI, indexJ);
+        System.out.printf("Gíá trị nhỏ nhất của mảng là %d ở tọa độ %d-%d:", min, indexI, indexJ);
     }
+
 }
