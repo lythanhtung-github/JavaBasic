@@ -61,7 +61,7 @@ public class Main {
 
     public static double calSumCol(int colSum, double[][] array) {
         double sumCol = 0;
-        for (int i = 0; i < array.length; i++) {
+        for(int i = 0; i < array.length; i++) {
             sumCol += array[i][colSum];
         }
         return sumCol;
