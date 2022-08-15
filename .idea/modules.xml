@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AddElementToArray/AddElementToArray.iml" filepath="$PROJECT_DIR$/AddElementToArray/AddElementToArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bai_Tap_Mang/Bai_Tap_Mang.iml" filepath="$PROJECT_DIR$/Bai_Tap_Mang/Bai_Tap_Mang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CalculateSumOfColArray2/CalculateSumOfColArray2.iml" filepath="$PROJECT_DIR$/CalculateSumOfColArray2/CalculateSumOfColArray2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChangeTemperature/ChangeTemperature.iml" filepath="$PROJECT_DIR$/ChangeTemperature/ChangeTemperature.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CheckStudentPass/CheckStudentPass.iml" filepath="$PROJECT_DIR$/CheckStudentPass/CheckStudentPass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CountCharOfStr/CountCharOfStr.iml" filepath="$PROJECT_DIR$/CountCharOfStr/CountCharOfStr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DeleteElementOfArray/DeleteElementOfArray.iml" filepath="$PROJECT_DIR$/DeleteElementOfArray/DeleteElementOfArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FindIndexArray/FindIndexArray.iml" filepath="$PROJECT_DIR$/FindIndexArray/FindIndexArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FindMaxElement/FindMaxElement.iml" filepath="$PROJECT_DIR$/FindMaxElement/FindMaxElement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FindMaxOfArray2/FindMaxOfArray2.iml" filepath="$PROJECT_DIR$/FindMaxOfArray2/FindMaxOfArray2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FindMinOfArray/FindMinOfArray.iml" filepath="$PROJECT_DIR$/FindMinOfArray/FindMinOfArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FindMinOfArray2/FindMinOfArray2.iml" filepath="$PROJECT_DIR$/FindMinOfArray2/FindMinOfArray2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaBasic.iml" filepath="$PROJECT_DIR$/.idea/JavaBasic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MergeArray/MergeArray.iml" filepath="$PROJECT_DIR$/MergeArray/MergeArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObjectAndClass/ObjectAndClass.iml" filepath="$PROJECT_DIR$/ObjectAndClass/ObjectAndClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReadNumToWord/ReadNumToWord.iml" filepath="$PROJECT_DIR$/ReadNumToWord/ReadNumToWord.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Reverse_Array/Reverse_Array.iml" filepath="$PROJECT_DIR$/Reverse_Array/Reverse_Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boi-chung-nho-nhat/boi-chung-nho-nhat.iml" filepath="$PROJECT_DIR$/boi-chung-nho-nhat/boi-chung-nho-nhat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calSumDiagonalLineArray2/calSumDiagonalLineArray2.iml" filepath="$PROJECT_DIR$/calSumDiagonalLineArray2/calSumDiagonalLineArray2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hien-thi-cac-loai-hinh/hien-thi-cac-loai-hinh.iml" filepath="$PROJECT_DIR$/hien-thi-cac-loai-hinh/hien-thi-cac-loai-hinh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hien-thi-so-nguyen-to/hien-thi-so-nguyen-to.iml" filepath="$PROJECT_DIR$/hien-thi-so-nguyen-to/hien-thi-so-nguyen-to.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hien-thi-so-nguyen-to-100/hien-thi-so-nguyen-to-100.iml" filepath="$PROJECT_DIR$/hien-thi-so-nguyen-to-100/hien-thi-so-nguyen-to-100.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kiem-tra-so-nguyen-to/kiem-tra-so-nguyen-to.iml" filepath="$PROJECT_DIR$/kiem-tra-so-nguyen-to/kiem-tra-so-nguyen-to.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thiet-ke-menu/thiet-ke-menu.iml" filepath="$PROJECT_DIR$/thiet-ke-menu/thiet-ke-menu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ung-dung-tien-lai-cho-vay/ung-dung-tien-lai-cho-vay.iml" filepath="$PROJECT_DIR$/ung-dung-tien-lai-cho-vay/ung-dung-tien-lai-cho-vay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uoc-chung-lon-nhat/uoc-chung-lon-nhat.iml" filepath="$PROJECT_DIR$/uoc-chung-lon-nhat/uoc-chung-lon-nhat.iml" />
+    </modules>
+  </component>
+</project>
