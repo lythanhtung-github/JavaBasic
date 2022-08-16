@@ -36,7 +36,7 @@ public class Point2D {
     }
 
     public float[] getXY() {
-        float[] toaDoXY = {this.x, this.y};
+        float[] toaDoXY = {this.getX(), this.getY()};
         return toaDoXY;
     }
 

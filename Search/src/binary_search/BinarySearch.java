@@ -25,7 +25,7 @@ public class BinarySearch {
         System.out.println(binarySearch(numbers, 79));
         System.out.println(binarySearch(numbers, 60));
         System.out.println(binarySearch(numbers, 59));
-        System.out.println(binarySearch(numbers, 11));
+        System.out.println(binarySearch(numbers, 1122312));
 
     }
 }

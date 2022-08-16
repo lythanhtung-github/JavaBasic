@@ -13,13 +13,13 @@ public class BinarySearchRecursive {
         System.out.print("Array after sort: ");
         printArray(numbers);
 
-        int valueSearch = inputValue();
+        int key = inputValue();
 
-        int indexSearch = binarySearch(numbers, 0, numbers.length, valueSearch);
+        int indexSearch = binarySearch(numbers, 0, numbers.length, key);
         if (indexSearch == -1) {
             System.out.println("Do not find!");
         } else {
-            System.out.printf("Position of %s is %s ", valueSearch, indexSearch);
+            System.out.printf("Position of %s is %s ", key, indexSearch);
         }
     }
 
@@ -63,7 +63,7 @@ public class BinarySearchRecursive {
             } else if (numbers[mid] > value) {
                 right = mid - 1;
                 return binarySearch(numbers, left, right, value);
-            } else if (numbers[mid] < value) {
+            } else {
                 left = mid + 1;
                 return binarySearch(numbers, left, right, value);
             }
