@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="807cc2f6-c841-48c4-84c0-e6d55c34d51f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../sort/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sort/InsertionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sort/QuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sort/QuickSort2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sort/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sort/SelectionSort2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +38,8 @@
       <option name="presentableId" value="Default" />
       <updated>1660549257156</updated>
       <workItem from="1660549258678" duration="33000" />
+      <workItem from="1660723305531" duration="29000" />
+      <workItem from="1660723359079" duration="46000" />
     </task>
     <servers />
   </component>
