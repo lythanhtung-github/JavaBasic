@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class FizzBuzz {
@@ -6,7 +5,7 @@ public class FizzBuzz {
         boolean isDiv3 = number % 3 == 0;
         boolean isDiv5 = number % 5 == 0;
         boolean isDiv3And5 = isDiv3 && isDiv5;
-        String word = "";
+        String word;
         if (isDiv3And5) {
             word = "FizzBuzz";
         } else if (isDiv3) {
