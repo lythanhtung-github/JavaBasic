@@ -44,13 +44,13 @@ public class FizzBuzz {
                 word = "Hai";
                 break;
             case 3:
-                word = "Ba";
+                word = "Fizz";
                 break;
             case 4:
                 word = "Bốn";
                 break;
             case 5:
-                word = "Năm";
+                word = "Buzz";
                 break;
             case 6:
                 word = "Sáu";
