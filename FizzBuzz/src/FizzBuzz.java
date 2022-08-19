@@ -4,13 +4,15 @@ public class FizzBuzz {
     public static String readNumberToWord(int number) {
         boolean isDiv3 = number % 3 == 0;
         boolean isDiv5 = number % 5 == 0;
+        boolean isNotHave3 = number / 10 != 3 && number % 10 != 3;
+        boolean isNotHave5 = number / 10 != 5 && number % 10 != 5;
         boolean isDiv3And5 = isDiv3 && isDiv5;
         String word;
         if (isDiv3And5) {
             word = "FizzBuzz";
-        } else if (isDiv3) {
+        } else if (isDiv3 && isNotHave5) {
             word = "Fizz";
-        } else if (isDiv5) {
+        } else if (isDiv5 && isNotHave3) {
             word = "Buzz";
         } else {
             word = readNumberToWordNotFizzBuzz(number);
@@ -19,7 +21,7 @@ public class FizzBuzz {
     }
 
     public static String readNumberToWordNotFizzBuzz(int number) {
-        String word ="";
+        String word = "";
         int first = number / 10;
         int second = number % 10;
         if (number < 10) {
@@ -70,10 +72,10 @@ public class FizzBuzz {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int number;
-        do{
+        do {
             System.out.println("Nhập số: ");
             number = sc.nextInt();
-        }while (number<0 || number>99);
+        } while (number < 0 || number > 99);
         System.out.println(readNumberToWord(number));
     }
 }
