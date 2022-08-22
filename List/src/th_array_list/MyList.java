@@ -1,4 +1,4 @@
-package list;
+package th_array_list;
 
 import java.util.Arrays;
 

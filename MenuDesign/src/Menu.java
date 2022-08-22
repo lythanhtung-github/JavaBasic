@@ -2,7 +2,10 @@ import java.util.Scanner;
 
 public class Menu {
     public static void main(String[] args) {
+        launch();
 
+    }
+    private static void launch(){
         Scanner sc = new Scanner(System.in);
         int choice;
 
@@ -41,7 +44,6 @@ public class Menu {
             }
         } while (true);
     }
-
     public static int printMenu(Scanner sc) {
         System.out.println("▬▬▬▬▬▬▬▬▬▬MENU▬▬▬▬▬▬▬▬▬▬");
         System.out.printf("%-35s▐\n", "▌");
@@ -51,7 +53,8 @@ public class Menu {
         System.out.println("▬▬▬▬▬▬▬▬▬▬MENU▬▬▬▬▬▬▬▬▬▬");
 
         System.out.println("Enter your choice: ");
-        return sc.nextInt();
+        return Integer.parseInt(sc.nextLine());
+
     }
 
     public static int printMenuPrint(Scanner sc) {
@@ -63,6 +66,6 @@ public class Menu {
         System.out.println("▬▬▬▬▬▬▬▬▬▬MENU▬▬▬▬▬▬▬▬▬▬");
 
         System.out.println("Enter your choice: ");
-        return sc.nextInt();
+        return Integer.parseInt(sc.nextLine());
     }
 }

@@ -1,4 +1,4 @@
-package linked_list;
+package th_linked_list;
 
 public class MyLinkedListTest {
     public static void main(String[] args) {
