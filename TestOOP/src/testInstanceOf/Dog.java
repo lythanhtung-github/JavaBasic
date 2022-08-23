@@ -1,11 +1,11 @@
 //package testInstanceOf;
 //
-//public class Dog extends Animal {
+//public class Dog extends Carnivores {
 //
 //    public static void main(String[] args) {
-//        Animal dog1 = new Dog();
-//        Animal bird;
-//        bird = new Animal();
+//        Carnivores dog1 = new Dog();
+//        Carnivores bird;
+//        bird = new Carnivores();
 //        System.out.println(bird instanceof Dog);
 //         dog1 = (Dog) bird;
 //         dog1.fly();

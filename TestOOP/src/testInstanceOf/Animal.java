@@ -1,6 +1,6 @@
 //package testInstanceOf;
 //
-//public class Animal {
+//public class Carnivores {
 //    private String name;
 //
 //
