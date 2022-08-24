@@ -12,13 +12,13 @@ public class CountWord {
         String str = sc.nextLine();
         String[] arr = str.split(" ");
         Map<String,Integer> wordAndCount = new TreeMap<>();
-        for (String temp : arr) {
-            if (wordAndCount.containsKey(temp)) {
-                int value = wordAndCount.get(temp);
+        for (String element : arr) {
+            if (wordAndCount.containsKey(element)) {
+                int value = wordAndCount.get(element);
                 value++;
-                wordAndCount.put(temp, value);
+                wordAndCount.put(element, value);
             } else {
-                wordAndCount.put(temp, 1);
+                wordAndCount.put(element, 1);
             }
         }
         System.out.println(wordAndCount);
