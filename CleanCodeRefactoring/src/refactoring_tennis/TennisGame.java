@@ -1,83 +1,90 @@
 package refactoring_tennis;
 
 public class TennisGame {
-    private static final int scoreIs0 = 0;
-    private static final int scoreIs1 = 1;
-    private static final int scoreIs2 = 2;
-    private static final int maxScore = 3;
+    private static final int SCORE_IS_0 = 0;
+    private static final int SCORE_IS_1 = 1;
+    private static final int SCORE_IS_2 = 2;
+    private static final int SCORE_IS_3 = 3;
+    public static final String LOVE_ALL = "Love-All";
+    public static final String FIFTEEN_ALL = "Fifteen-All";
+    public static final String THIRTY_ALL = "Thirty-All";
+    public static final String FORTY_ALL = "Forty-All";
+    public static final String DEUCE = "Deuce";
+    public static final String ADVANTAGE_PLAYER_1 = "Advantage player1";
+    public static final String ADVANTAGE_PLAYER_2 = "Advantage player2";
+    public static final String WIN_FOR_PLAYER_1 = "Win for player1";
+    public static final String WIN_FOR_PLAYER_2 = "Win for player2";
+    public static final String LOVE = "Love";
+    public static final String FIFTEEN = "Fifteen";
+    public static final String THIRTY = "Thirty";
+    public static final String FORTY = "Forty";
 
     public static String getScore(int player1Score, int player2Score) {
         String score = "";
-        int tempScore;
         boolean equalScore = (player1Score == player2Score);
         boolean scorePlayer1Greater4 = (player1Score >= 4);
         boolean scorePlayer2Greater4 = (player2Score >= 4);
         if (equalScore) {
-            score = checkScore(player1Score);
-        } else if (scorePlayer1Greater4 || scorePlayer2Greater4) {
-            int minusResult = player1Score - player2Score;
-            score = checkMinusResult(minusResult);
-        } else {
-            for (int i = scoreIs1; i < maxScore; i++) {
-                if (i == scoreIs1) {
-                    tempScore = player1Score;
-                } else {
-                    score += "-";
-                    tempScore = player2Score;
-                }
-                score = checkTempScore(tempScore, score);
-            }
+            return deuce(player1Score);
         }
-        return score;
+        if (scorePlayer1Greater4 || scorePlayer2Greater4) {
+            int minusResult = player1Score - player2Score;
+            return checkMinusResult(minusResult);
+        }
+        return String.format("%s-%s", zeroToThree(player1Score, score), zeroToThree(player2Score, score));
     }
 
     public static String checkMinusResult(int minusResult) {
         String score;
-        if (minusResult == 1) {
-            score = "Advantage player1";
-        } else if (minusResult == -1) {
-            score = "Advantage player2";
-        } else if (minusResult >= 2) {
-            score = "Win for player1";
-        } else score = "Win for player2";
-        return score;
-    }
-
-    public static String checkScore(int mScore) {
-        String score;
-        switch (mScore) {
-            case scoreIs0:
-                score = "Love-All";
+        switch (minusResult) {
+            case 1:
+                score = ADVANTAGE_PLAYER_1;
                 break;
-            case scoreIs1:
-                score = "Fifteen-All";
-                break;
-            case scoreIs2:
-                score = "Thirty-All";
-                break;
-            case maxScore:
-                score = "Forty-All";
+            case -1:
+                score = ADVANTAGE_PLAYER_2;
                 break;
             default:
-                score = "Deuce";
+                score = minusResult >= 2 ? WIN_FOR_PLAYER_1 : WIN_FOR_PLAYER_2;
                 break;
         }
         return score;
     }
 
-    public static String checkTempScore(int tempScore, String score) {
+    public static String deuce(int score) {
+        String result;
+        switch (score) {
+            case SCORE_IS_0:
+                result = LOVE_ALL;
+                break;
+            case SCORE_IS_1:
+                result = FIFTEEN_ALL;
+                break;
+            case SCORE_IS_2:
+                result = THIRTY_ALL;
+                break;
+            case SCORE_IS_3:
+                result = FORTY_ALL;
+                break;
+            default:
+                result = DEUCE;
+                break;
+        }
+        return result;
+    }
+
+    public static String zeroToThree(int tempScore, String score) {
         switch (tempScore) {
-            case scoreIs0:
-                score += "Love";
+            case SCORE_IS_0:
+                score += LOVE;
                 break;
-            case scoreIs1:
-                score += "Fifteen";
+            case SCORE_IS_1:
+                score += FIFTEEN;
                 break;
-            case scoreIs2:
-                score += "Thirty";
+            case SCORE_IS_2:
+                score += THIRTY;
                 break;
-            case maxScore:
-                score += "Forty";
+            case SCORE_IS_3:
+                score += FORTY;
                 break;
         }
         return score;

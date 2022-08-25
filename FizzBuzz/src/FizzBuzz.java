@@ -1,69 +1,78 @@
 import java.util.Scanner;
 
 public class FizzBuzz {
+
+    public static final String FIZZ_BUZZ = "FizzBuzz";
+    public static final String FIZZ = "Fizz";
+    public static final String BUZZ = "Buzz";
+    public static final String ZERO = "Zero";
+    public static final String ONE = "One";
+    public static final String TWO = "Two";
+    public static final String FOUR = "Four";
+    public static final String SIX = "Six";
+    public static final String SEVEN = "Seven";
+    public static final String EIGHT = "Eight";
+    public static final String NINE = "Nine";
+
     public static String readNumberToWord(int number) {
         boolean isDiv3 = number % 3 == 0;
         boolean isDiv5 = number % 5 == 0;
         boolean isNotHave3 = number / 10 != 3 && number % 10 != 3;
         boolean isNotHave5 = number / 10 != 5 && number % 10 != 5;
         boolean isDiv3And5 = isDiv3 && isDiv5;
-        String word;
         if (isDiv3And5) {
-            word = "FizzBuzz";
-        } else if (isDiv3 && isNotHave5) {
-            word = "Fizz";
-        } else if (isDiv5 && isNotHave3) {
-            word = "Buzz";
-        } else {
-            word = readNumberToWordNotFizzBuzz(number);
+            return FIZZ_BUZZ;
         }
-        return word;
+        if (isDiv3 && isNotHave5) {
+            return FIZZ;
+        }
+        if (isDiv5 && isNotHave3) {
+            return BUZZ;
+        }
+        return readNumberToWordNotFizzBuzz(number);
     }
 
     public static String readNumberToWordNotFizzBuzz(int number) {
-        String word = "";
         int first = number / 10;
         int second = number % 10;
         if (number < 10) {
-            word = readZeroToNine(second);
-        } else if (number < 100) {
-            word = readZeroToNine(first) + " " + readZeroToNine(second);
+            return readZeroToNine(second);
         }
-        return word;
+        return String.format("%s %s", readZeroToNine(first), readZeroToNine(second));
     }
 
-    public static String readZeroToNine(int second) {
+    public static String readZeroToNine(int number) {
         String word = "";
-        switch (second) {
+        switch (number) {
             case 0:
-                word = "Không";
+                word = ZERO;
                 break;
             case 1:
-                word = "Một";
+                word = ONE;
                 break;
             case 2:
-                word = "Hai";
+                word = TWO;
                 break;
             case 3:
-                word = "Fizz";
+                word = FIZZ;
                 break;
             case 4:
-                word = "Bốn";
+                word = FOUR;
                 break;
             case 5:
-                word = "Buzz";
+                word = BUZZ;
                 break;
             case 6:
-                word = "Sáu";
+                word = SIX;
                 break;
             case 7:
-                word = "Bảy";
+                word = SEVEN;
                 break;
             case 8:
-                word = "Tám";
+                word = EIGHT;
                 break;
             case 9:
-                word = "Chín";
+                word = NINE;
                 break;
         }
         return word;
@@ -73,7 +82,7 @@ public class FizzBuzz {
         Scanner sc = new Scanner(System.in);
         int number;
         do {
-            System.out.println("Nhập số: ");
+            System.out.println("Enter number: ");
             number = sc.nextInt();
         } while (number < 0 || number > 99);
         System.out.println(readNumberToWord(number));
