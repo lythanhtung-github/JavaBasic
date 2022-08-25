@@ -20,12 +20,24 @@ public class TriangleClassifier {
         return isRightTriangle;
     }
 
+    public static boolean checkEquilateralTriangle(int edge1, int edge2, int edge3){
+        boolean isEquilateralTriangle;
+        isEquilateralTriangle = edge1 == edge2 && edge2 == edge3;
+        return isEquilateralTriangle;
+    }
+
+    public static boolean checkIsoscelesTriangle(int edge1, int edge2, int edge3){
+        boolean isIsoscelesTriangle;
+        isIsoscelesTriangle = edge1 == edge2 || edge1 == edge3 || edge2 == edge3;
+        return isIsoscelesTriangle;
+    }
+
     public static String triangleClassifier(int edge1, int edge2, int edge3) {
         String triangleClassifier;
         if (checkTriangle(edge1, edge2, edge3)) {
-            if (edge1 == edge2 && edge2 == edge3) {
+            if (checkEquilateralTriangle(edge1, edge2, edge3)) {
                 triangleClassifier = "Tam giác đều";
-            } else if (edge1 == edge2 || edge1 == edge3 || edge2 == edge3) {
+            } else if (checkIsoscelesTriangle(edge1, edge2, edge3)) {
                 triangleClassifier = "Tam giác cân";
             } else if (checkRightTriangle(edge1, edge2, edge3)) {
                 triangleClassifier = "Tam giác vuông";

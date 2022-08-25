@@ -78,26 +78,26 @@ public class NextDayCalculator {
         do {
             System.out.println("Enter year: ");
             year = sc.nextInt();
-            if (year < 0) {
+            if (year <= 0) {
                 System.out.println("Year is not validation");
             }
-        } while (year < 0);
+        } while (year <= 0);
 
         do {
             System.out.println("Enter month: ");
             month = sc.nextInt();
-            if (month < 0 || month > 12) {
+            if (month <= 0 || month > 12) {
                 System.out.println("Month is not validation");
             }
-        } while (month < 0 || month > 12);
+        } while (month <= 0 || month > 12);
         int maxDayOfMonth = maxDayOfMonth(month, year);
         do {
             System.out.println("Enter day: ");
             day = sc.nextInt();
-            if (day < 0 || day > maxDayOfMonth) {
+            if (day <= 0 || day > maxDayOfMonth) {
                 System.out.println(" Day is not validation");
             }
-        } while (day < 0 || day > maxDayOfMonth);
+        } while (day <= 0 || day > maxDayOfMonth);
         System.out.println("Day: " + day + "/" + month + "/" + year);
         String nextDay = calculatorNextDay(day, month, year);
         System.out.println("Next day: " + nextDay);
