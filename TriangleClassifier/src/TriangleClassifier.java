@@ -22,7 +22,7 @@ public class TriangleClassifier {
 
     public static boolean checkEquilateralTriangle(int edge1, int edge2, int edge3){
         boolean isEquilateralTriangle;
-        isEquilateralTriangle = edge1 == edge2 && edge2 == edge3;
+        isEquilateralTriangle = (edge1 == edge2 && edge2 == edge3);
         return isEquilateralTriangle;
     }
 
