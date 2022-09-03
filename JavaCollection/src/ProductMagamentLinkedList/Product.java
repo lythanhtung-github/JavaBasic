@@ -35,11 +35,7 @@ public class Product implements Comparable<Product> {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "id = '" + id + '\'' +
-                ", name = '" + name + '\'' +
-                ", price=" + price +
-                '}';
+        return String.format( "|%-10s%-10s | %-10s%-16s | %-8s%-15s|"," ", id," ", name," ", price);
     }
 
     @Override

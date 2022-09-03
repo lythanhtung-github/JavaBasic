@@ -1,6 +1,5 @@
 package ProductMagamentLinkedList;
 
-
 import java.util.Scanner;
 
 public class Main {
@@ -9,7 +8,6 @@ public class Main {
     public static void main(String[] args) {
 
         ProductManager productManager = new ProductManager();
-        Menu menu = new Menu();
         productManager.add("IP12", 12000000);
         productManager.add("IP13", 13000000);
         productManager.add("IP11", 11000000);
@@ -18,68 +16,79 @@ public class Main {
 
         int option = -1;
         do {
-            menu.showMenu();
-            System.out.println("Enter your choice: ");
-            System.out.print("=> ");
+            Menu.showMenu();
             option = Integer.parseInt(scanner.nextLine());
             String name;
             int id, price;
             switch (option) {
                 case 1:
-                    System.out.println("Thêm tên: ");
+                    System.out.println("░░░░░░░░░░░░░░░░░ THÊM SP ░░░░░░░░░░░░░░░░░");
+                    System.out.print("Nhập tên: ");
                     name = scanner.nextLine();
-                    System.out.println("Thêm giá: ");
+                    System.out.print("Nhập giá: ");
                     price = Integer.parseInt(scanner.nextLine());
                     productManager.add(name, price);
                     System.out.println("Thêm thành công");
-                    System.out.println("Enter to next");
+                    System.out.print("Enter để tiếp tục");
                     scanner.nextLine();
                     break;
                 case 2:
-                    System.out.println("Nhập ID cần sửa: ");
+                    System.out.println("░░░░░░░░░░░░░░░░░ SỬA SP ░░░░░░░░░░░░░░░░░");
+                    System.out.print("Nhập ID cần sửa: ");
                     id = Integer.parseInt(scanner.nextLine());
-                    System.out.println("Nhập tên mới: ");
+                    System.out.print("Nhập tên mới: ");
                     name = scanner.nextLine();
-                    System.out.println("Nhập giá mới: ");
+                    System.out.print("Nhập giá mới: ");
                     price = Integer.parseInt(scanner.nextLine());
                     productManager.update(id, name, price);
                     System.out.println("Sửa thành công");
-                    System.out.println("Enter to next");
+                    System.out.print("Enter để tiếp tục");
                     scanner.nextLine();
                     break;
                 case 3:
-                    System.out.println("Nhập ID cần xóa: ");
+                    System.out.println("░░░░░░░░░░░░░░░░░ XÓA SP ░░░░░░░░░░░░░░░░░");
+                    System.out.print("Nhập ID cần xóa: ");
                     id = Integer.parseInt(scanner.nextLine());
                     productManager.delete(id);
                     System.out.println("Xóa thành công");
-                    System.out.println("Enter to next");
+                    System.out.print("Enter để tiếp tục");
                     scanner.nextLine();
                     break;
                 case 4:
+                    Menu.showHeadTable();
                     productManager.render();
-                    System.out.println("Enter to next");
+                    System.out.print("-----------------------------------------------------------------------------\n");
+                    System.out.print("Enter để tiếp tục");
                     scanner.nextLine();
                     break;
                 case 5:
-                    System.out.println("Nhập tên cần tìm: ");
+                    System.out.println("░░░░░░░░░░░░░░░░ TÌM KIẾM ░░░░░░░░░░░░░░░░");
+                    System.out.print("Nhập tên cần tìm: ");
                     name = scanner.nextLine();
                     productManager.find(name);
-                    System.out.println("Enter to next");
+                    System.out.print("Enter để tiếp tục");
                     scanner.nextLine();
                     break;
                 case 6:
-                    System.out.println("Sắp xếp tăng dần");
+                    System.out.println("=> SẮP XẾP TĂNG DẦN ");
+                    Menu.showHeadTable();
                     productManager.ascendingSort();
-                    System.out.println("Enter to next");
+                    System.out.print("-----------------------------------------------------------------------------\n");
+                    System.out.print("Enter để tiếp tục");
                     scanner.nextLine();
                     break;
                 case 7:
-                    System.out.println("Sắp xếp giảm dần");
+                    System.out.println("=> SẮP XẾP GIẢM DẦN ");
+                    Menu.showHeadTable();
                     productManager.descendingSort();
-                    System.out.println("Enter to next");
+                    System.out.print("-----------------------------------------------------------------------------\n");
+                    System.out.print("Enter để tiếp tục");
                     scanner.nextLine();
                     break;
                 case 8:
+                    break;
+                default:
+                    System.out.println("Nhập sai vui lòng nhập lại!");
                     break;
             }
         } while (option != 8);

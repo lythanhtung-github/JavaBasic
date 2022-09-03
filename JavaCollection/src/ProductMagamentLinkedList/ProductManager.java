@@ -1,8 +1,5 @@
 package ProductMagamentLinkedList;
 
-import ProductMagamentArraylist.Product;
-
-import java.util.Comparator;
 import java.util.LinkedList;
 
 import static java.util.Comparator.*;
@@ -14,7 +11,7 @@ public class ProductManager {
     }
 
     public void add(String name, int price) {
-        products.add(new ProductMagamentArraylist.Product(name, price));
+        products.add(new Product(name, price));
     }
 
     public void update(int ID, String name, int price) {
@@ -32,14 +29,14 @@ public class ProductManager {
     }
 
     public void render() {
-        for (ProductMagamentArraylist.Product item : products) {
+        for (Product item : products) {
             System.out.println(item.toString());
         }
     }
 
     public void find(String name) {
-        for (ProductMagamentArraylist.Product item : products) {
-            if (item.getName().equals(name)) {
+        for (Product item : products) {
+            if ((item.getName().toUpperCase()).equals(name.toUpperCase())) {
                 System.out.println(item);
                 return;
             }

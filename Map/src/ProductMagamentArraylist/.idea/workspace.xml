@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6ac6f57d-f295-448f-b17e-0aea3dfcd7c3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../JavaCollection/out/production/JavaCollection/ProductMagamentLinkedList/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaCollection/out/production/JavaCollection/ProductMagamentLinkedList/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JavaCollection/out/production/JavaCollection/ProductMagamentLinkedList/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaCollection/out/production/JavaCollection/ProductMagamentLinkedList/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JavaCollection/src/ProductMagamentArraylist/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaCollection/src/ProductMagamentArraylist/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JavaCollection/src/ProductMagamentLinkedList/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaCollection/src/ProductMagamentLinkedList/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JavaCollection/src/ProductMagamentLinkedList/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaCollection/src/ProductMagamentLinkedList/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JavaCollection/src/ProductMagamentLinkedList/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaCollection/src/ProductMagamentLinkedList/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TestOOP/out/production/TestOOP/generics_linkedlist/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TestOOP/out/production/TestOOP/generics_linkedlist/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TestOOP/src/generics_linkedlist/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TestOOP/src/generics_linkedlist/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2E1MOtg8qR4CluR8lnASPxfFNBu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/GitHub/JavaBasic/Map&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ac6f57d-f295-448f-b17e-0aea3dfcd7c3" name="Changes" comment="" />
+      <created>1661758609588</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661758609588</updated>
+      <workItem from="1661758610893" duration="10000" />
+      <workItem from="1661758949745" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
