@@ -16,7 +16,6 @@ public class Main {
             e.printStackTrace();
         }
     }
-
     public static void main(String[] args) throws IOException {
         List<Student> students = new ArrayList<>();
         students.add(new Student(1,"Lý Thanh Tùng", "Thừa Thiên Huế"));

@@ -6,7 +6,7 @@ import java.nio.file.StandardCopyOption;
 import java.util.Scanner;
 
 public class Main {
-    private static void copyFileUsingJava7Files(File source, File dest) throws IOException, IOException {
+    private static void copyFileUsingJava7Files(File source, File dest) throws IOException {
         Files.copy(source.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
     }
 
