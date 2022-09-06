@@ -9,13 +9,15 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        FileReader fr = null;
         BufferedReader br = null;
         try {
             String line;
+            fr = new FileReader("E:\\GitHub\\JavaBasic\\TextFile\\src\\readCSV\\contries.csv");
             //"E:\\GitHub\\JavaBasic\\TextFile\\src\\readCSV\\contries.csv"
-            br = new BufferedReader(
-                    new FileReader("E:\\GitHub\\JavaBasic\\TextFile\\src\\readCSV\\contries.csv"));
-            while ((line = br.readLine()) != null) {
+            br = new BufferedReader(fr);
+            while ((br.readLine()) != null) {
+                line = br.readLine();
                 printCountry(parseCsvLine(line));
             }
         } catch (IOException e) {
@@ -31,15 +33,10 @@ public class Main {
     }
 
     public static List<String> parseCsvLine(String csvLine) {
-        int id;
-        String vietTat;
-        String name;
         List<String> result = new ArrayList<>();
         if (csvLine != null) {
             String[] splitData = csvLine.split(",");
-            for (int i = 0; i < splitData.length; i++) {
-                result.add(splitData[i]);
-            }
+            result.addAll(Arrays.asList(splitData));
             // Collections.addAll(result, splitData);
         }
         return result;

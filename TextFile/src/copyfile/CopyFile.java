@@ -5,20 +5,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CopyFile {
-    private List<String> strArray = new ArrayList<>();
-    public void readFile(String filePath){
+    private static final List<String> strArray = new ArrayList<>();
+
+    private static void readFile(String filePath) {
 
         try {
-            File file = new File(filePath);
+            FileReader file = new FileReader(filePath);
 
-            if (!file.exists()) {
-                throw new FileNotFoundException();
-            }
-
-            BufferedReader br = new BufferedReader(new FileReader(file));
-            String line = "";
-            while ((line = br.readLine()) != null) {
-                strArray.add(line);
+            BufferedReader br = new BufferedReader(file);
+            while ((br.readLine()) != null) {
+                strArray.add(br.readLine());
             }
             br.close();
         } catch (Exception e) {
@@ -26,12 +22,12 @@ public class CopyFile {
         }
     }
 
-    public void writeFile(String filePathCopy){
+    private static void writeFile(String filePathCopy) {
         try {
-            FileWriter writer = new FileWriter(filePathCopy, true);
+            FileWriter writer = new FileWriter(filePathCopy);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
-            for(String str : strArray){
-                bufferedWriter.write(str+"\n");
+            for (String str : strArray) {
+                bufferedWriter.write(str + "\n");
             }
             bufferedWriter.close();
             System.out.println("Copy file thành công");
@@ -40,7 +36,10 @@ public class CopyFile {
         }
     }
 
-    public CopyFile(String filePath, String filePathCopy) {
+    private CopyFile() {
+    }
+
+    public static void copyFile(String filePath, String filePathCopy) {
         readFile(filePath);
         writeFile(filePathCopy);
     }
